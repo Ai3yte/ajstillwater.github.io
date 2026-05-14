@@ -1341,7 +1341,7 @@
         <h2 class="section-heading reveal">AJ Stillwater</h2>
         <div class="about-grid">
             <div class="about-text reveal reveal-d1">
-                <p>AJ Stillwater specialises in <strong>data hygiene and rigorous security</strong> within the United Kingdom. Dedicated to the intersection of civil society integrity and advanced technical engineering.</p>
+                <p>AJ Stillwater builds tools for people who need them. TaoTab was created in response to a straightforward problem — the people doing the most important work are often the least equipped to protect the information they carry.</p>
                 <p>TaoTab exists because charities and public services face the same digital risks as any organisation — but without the same IT budgets, security teams, or margin for error. In the UK, funding pressures on the third sector have never been greater. The tools should never become the vulnerability simply because the budget ran out.</p>
                 <p>This version of TaoTab is provided free of charge to qualifying third-sector and public service organisations — built specifically for the people doing this work.</p>
                 <p>TaoTab is installed software — it runs on your device and works independently of any server, subscription, or ongoing connection. The support offered is personal and direct, but the program itself belongs to your organisation once installed. It does not expire, it does not go dark, and it does not depend on anyone staying active to keep working. That is a deliberate design decision.</p>
@@ -1379,12 +1379,41 @@
         <div class="section-label">Contact</div>
         <h2 class="section-heading reveal">Request access —<br><em>become a Guardian.</em></h2>
         <div class="contact-wrap reveal reveal-d1">
-            <p>TaoTab is offered directly and personally — not distributed openly. Every request is read individually and access is granted based on the nature of the work, not a form or a waiting list. This is a considered process, and that is intentional.</p>
-            <p>If your work involves protecting people and handling sensitive information about those in your care, we would like to hear from you. Every person or team that receives TaoTab receives direct, personal support alongside it — a real person, not a helpdesk. You will know exactly who to contact and how.</p>
-            <p style="font-size:0.78rem; color: var(--muted); border-left: 2px solid var(--border2); padding-left: 16px; margin-bottom: 36px; line-height: 2;">Please include your <strong style="color:var(--dim); font-weight:400;">name</strong>, <strong style="color:var(--dim); font-weight:400;">organisation</strong>, <strong style="color:var(--dim); font-weight:400;">registered charity number</strong>, and a brief description of <strong style="color:var(--dim); font-weight:400;">your role</strong> when making contact. All requests are verified before access is granted. Requests submitted with full details are typically reviewed within a few working days. TaoTab is offered selectively — not because access is difficult, but because the people it protects deserve to know it is in the right hands.</p>
-            <a href="mailto:aj@ajstillwater.uk" class="contact-email">
-                <span class="at">✉</span> aj@ajstillwater.uk
-            </a>
+            <p>TaoTab is offered directly and personally — not distributed openly. Every request is read individually and access is granted based on the nature of the work. Fill in the form below and your request will be reviewed within a few working days.</p>
+            <p>If your work involves protecting people and handling sensitive information about those in your care, we would like to hear from you. Every person or team that receives TaoTab receives direct, personal support alongside it — a real person, not a helpdesk.</p>
+
+            <form action="https://formspree.io/f/mqenvkgr" method="POST" style="margin-top:32px;">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;">
+                    <div>
+                        <label style="display:block;font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Full Name <span style="color:var(--accent);">*</span></label>
+                        <input type="text" name="name" required style="width:100%;background:var(--glass);border:1px solid var(--border);color:var(--text);padding:12px 16px;font-size:0.85rem;font-family:inherit;outline:none;box-sizing:border-box;" placeholder="Your full name">
+                    </div>
+                    <div>
+                        <label style="display:block;font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Organisation <span style="color:var(--accent);">*</span></label>
+                        <input type="text" name="organisation" required style="width:100%;background:var(--glass);border:1px solid var(--border);color:var(--text);padding:12px 16px;font-size:0.85rem;font-family:inherit;outline:none;box-sizing:border-box;" placeholder="Your organisation">
+                    </div>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;">
+                    <div>
+                        <label style="display:block;font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Registered Charity Number <span style="color:var(--accent);">*</span></label>
+                        <input type="text" name="charity_number" required style="width:100%;background:var(--glass);border:1px solid var(--border);color:var(--text);padding:12px 16px;font-size:0.85rem;font-family:inherit;outline:none;box-sizing:border-box;" placeholder="e.g. 123456">
+                    </div>
+                    <div>
+                        <label style="display:block;font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Your Role <span style="color:var(--accent);">*</span></label>
+                        <input type="text" name="role" required style="width:100%;background:var(--glass);border:1px solid var(--border);color:var(--text);padding:12px 16px;font-size:0.85rem;font-family:inherit;outline:none;box-sizing:border-box;" placeholder="e.g. Caseworker, IT Lead">
+                    </div>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <label style="display:block;font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Brief Description of Your Work <span style="color:var(--accent);">*</span></label>
+                    <textarea name="description" required rows="4" style="width:100%;background:var(--glass);border:1px solid var(--border);color:var(--text);padding:12px 16px;font-size:0.85rem;font-family:inherit;outline:none;box-sizing:border-box;resize:vertical;" placeholder="Tell us briefly about the work you do and the people you support."></textarea>
+                </div>
+                <div style="margin-bottom:28px;">
+                    <label style="display:block;font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--dim);margin-bottom:8px;">Your Email Address <span style="color:var(--accent);">*</span></label>
+                    <input type="email" name="email" required style="width:100%;background:var(--glass);border:1px solid var(--border);color:var(--text);padding:12px 16px;font-size:0.85rem;font-family:inherit;outline:none;box-sizing:border-box;" placeholder="so we can respond to you">
+                </div>
+                <button type="submit" style="background:var(--accent);color:#000;border:none;padding:14px 36px;font-size:0.78rem;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-family:inherit;font-weight:600;">Submit Request</button>
+                <p style="margin-top:16px;font-size:0.72rem;color:var(--muted);">All requests are verified before access is granted. TaoTab is offered selectively — not because access is difficult, but because the people it protects deserve to know it is in the right hands.</p>
+            </form>
         </div>
     </div>
 </section>
